@@ -7,6 +7,6 @@ module.exports = function(server) {
   server.use('/api', router)
 
   // rotas da API
-  const etapaService = require('../api/etapaService')
+  const etapaService = require('../api/etapa/etapaService')
   etapaService.register(router, '/etapas')
 }

@@ -3,23 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "main": "loader.js",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2",
-    "express-query-int": "^3.0.0",
-    "lodash": "^4.17.5",
-    "mongoose": "^5.0.8",
-    "mongoose-paginate": "^5.0.3",
-    "node-restful": "^0.2.6",
-    "pm2": "^2.10.1"
-  },
-  "devDependencies": {
-    "nodemon": "^1.17.1"
-  },
   "scripts": {
     "dev": "nodemon",
-    "production": "pm2 start loader.js --name hgm-backend"    
+    "production": "pm2 start loader.js --name backend"
   },
   "author": "William Alves",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-query-int": "^1.0.1",
+    "lodash": "^4.17.2",
+    "mongoose": "^4.9.1",
+    "mongoose-paginate": "^5.0.3",
+    "node-restful": "^0.2.5",
+    "pm2": "^2.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
 }

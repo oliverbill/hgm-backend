@@ -4,7 +4,7 @@ const mongoose = restful.mongoose
 const blindSchema = new mongoose.Schema({
     nivel: {type:Number, min:1, required:true},
     small: {type:Number, required:true},
-    big: {type:Number, required:true,default:small*2},
+    big: {type:Number, required:true},
     intervaloEmMinutos: {type:Number, required:true},
 })
 
@@ -19,7 +19,7 @@ const jogadorSchema = new mongoose.Schema({
     endereco: [enderecoSchema],
     nome: {type:String,required:true},
     idade: {type:Number,required:true,min:18},
-    apelido: {type:String,default:nome},
+    apelido: {type:String},
     apartamentoBloco: {type:String,required:true},
 })
 
@@ -36,7 +36,7 @@ const etapaSchema = new mongoose.Schema({
     jogadores: [jogadorSchema],
     stackInicial: {type:Number,required:true},
     buyin: {type:Number,required:true},
-    addOn: {type:Number, min: buyin},
+    addOn: {type:Number},
     rateios: [rateioSchema],
     nivelStopRebuy: {type:Number, required:true},
     timeBankInMinutes: {type:Number, default: 1}
